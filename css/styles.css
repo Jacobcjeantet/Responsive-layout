@@ -24,7 +24,8 @@ img {
 }
 
 .profile-img {
-	width: 60%
+	width: 60%;
+	
 }
 
 .intro {
@@ -32,14 +33,27 @@ img {
 	margin: 2em;
 }
 
+#port {
+	text-align: center;
+}
+
+.bottom {
+	padding: 2%;
+}
+
 /*Gallery Styling */
 
-.gallery {
+.port {
 	background-color: #fff;
 	margin: 4% 2%;
 	padding: 2.5%;
 }
 
+.gallery li {
+	padding-right: 5%;
+	margin-right: 3%;
+	padding-top: 2%
+}
 
 /*Nav Styling */
 
@@ -99,6 +113,9 @@ footer li, footer a {
 
 @media (min-width: 768px) {
 	
+	.profile-img {
+		padding-right: 2%
+	}
 
 	.mobile {
 		display: none;
@@ -127,12 +144,15 @@ footer li, footer a {
 		margin-left: 2em;
 	}
 	
-
 	
 	.gallery {
 		webkit-column-count: 2;
 		-moz-column-count: 2; 
 		column-count: 2;
+		-moz-column-fill: balance;
+		column-fill: balance;
+		column-width: 30%;
+		-webkit-perspective:1;
 	}
 	
 	#port {
@@ -151,7 +171,15 @@ footer li, footer a {
 }
 
 @media (min-width:1024px) {
-	
+	.main-nav {
+		float: right;
+	}
+	.name {
+		float: left;
+	}
+	.profile-img {
+		display: block;
+	}
 	
 	.gallery {
 		webkit-column-count: 3;
