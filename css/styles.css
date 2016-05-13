@@ -151,7 +151,6 @@ footer li, footer a {
 		column-count: 2;
 		-moz-column-fill: balance;
 		column-fill: balance;
-		column-width: 30%;
 		-webkit-perspective:1;
 	}
 	
